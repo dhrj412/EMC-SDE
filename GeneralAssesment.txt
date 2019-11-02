@@ -1,0 +1,20 @@
+1) Assess your knowledge level on the following languages (1 = none; 5 = expert):
+A) Vanilla JS - 3
+    jQuery - 3
+    HTML/HTML5 - 4
+    CSS/CSS3 - 4
+    Ajax - 3
+    AngularJS - 3
+    Bootstrap - 3
+
+2) What is the width of a container with 100px of width and 5px of padding?
+A) 100px
+
+3) How to apply a click event to all paragraphs except for the last?
+A) We can apply the .not() selector with :last to filter the last element:
+
+    $('#elementName li').not(':last').on('click', someFunction);
+
+4) Why does the alert show "Jack" first and then undefined?
+A) Since there is no semicolon placed after the return statement, JavaScript auto adds semicolons and therefore an undefined is returned after Jack is returned by the alert.
+
