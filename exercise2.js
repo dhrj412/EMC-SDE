@@ -14,3 +14,33 @@ $(".dellmetrics-pl-tab").on("click", function() {
     $(".gray-light").css("background", "green");
   }
 });
+
+// fetching price and returning sum
+
+(function () { let batteryUnitPrice = [];
+const allPrices = document.getElementsByClassName("half-hero-pricing");
+for (let i = 44; i < 48; i++) {
+  const values = allPrices[i].innerText;
+  batteryUnitPrice.push(Math.ceil(values.slice(12, 17)));
+}
+const arrSum = arr => arr.reduce((a,b) => a + b, 0)
+alert(arrSum(batteryUnitPrice));
+}) ();
+
+
+//Networking section with Cameras, Photo & Video images
+
+let source = [];
+const e = document.getElementsByClassName("half-inner-module-image");
+for (let i = 24; i < 28; i++) {
+    const values = e[i].innerHTML;
+    source.push(values);
+}
+console.log(source);
+for(let i = 40; i < 44; i++){
+    for(let j = 0; j< source.length; j++)
+    e[i].innerHTML = source[j];
+}
+
+
+
